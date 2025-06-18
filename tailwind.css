@@ -1,0 +1,122 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --accessiblesystemgraylight: rgba(108, 108, 112, 1);
+  --body-bold-font-family: "SF Pro Text", Helvetica;
+  --body-bold-font-size: 17px;
+  --body-bold-font-style: normal;
+  --body-bold-font-weight: 400;
+  --body-bold-letter-spacing: -0.40799999237060547px;
+  --body-bold-line-height: 22px;
+  --caption1-regular-font-family: "SF Pro Text", Helvetica;
+  --caption1-regular-font-size: 12px;
+  --caption1-regular-font-style: normal;
+  --caption1-regular-font-weight: 400;
+  --caption1-regular-letter-spacing: 0px;
+  --caption1-regular-line-height: 16px;
+  --caption2-regular-font-family: "SF Pro Text", Helvetica;
+  --caption2-regular-font-size: 11px;
+  --caption2-regular-font-style: normal;
+  --caption2-regular-font-weight: 400;
+  --caption2-regular-letter-spacing: 0.06599999964237213px;
+  --caption2-regular-line-height: 13px;
+  --defaultsystembluelight: rgba(0, 122, 255, 1);
+  --gray-400: rgba(155, 169, 176, 1);
+  --gray-500: rgba(126, 145, 154, 1);
+  --gray-900: rgba(34, 40, 43, 1);
+  --green-600: rgba(67, 150, 54, 1);
+  --label-colordarkprimary: rgba(255, 255, 255, 1);
+  --label-colorlightprimary: rgba(0, 0, 0, 1);
+  --separator-colorlightwith-transparency: rgba(60, 60, 67, 0.36);
+  --telegram-green: rgba(231, 254, 204, 1);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
